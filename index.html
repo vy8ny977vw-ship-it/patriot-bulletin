@@ -3,64 +3,66 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Northside Patriot Bulletin</title>
-<meta name="description" content="Clubs, teams, meetings and deadlines from Northside High School's daily announcements.">
-<style>
-:root{color-scheme:light dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-body{margin:0}
-img{max-width:100%}
-[hidden]{display:none!important}
-</style>
+<title>Patriot Bulletin · Northside High School</title>
+<meta name="description" content="Clubs, teams, meetings and deadlines at Northside High School in Columbus, GA.">
+<meta name="theme-color" content="#B0202C">
 <script data-goatcounter="https://patriot-bulletin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
-<title>Northside Patriot Bulletin</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@0,400;0,500;0,600&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
 :root{
-  --ground:#F6F8FB; --surface:#FFFFFF; --surface-2:#EDF1F7;
-  --ink:#0F1A2C; --ink-2:#4B5A70; --ink-3:#7C8A9E;
-  --line:#DBE2EC; --line-strong:#C2CCDA;
-  --accent:#B0202C; --accent-ink:#8E1A24; --accent-soft:#FAE8EA;
+  --ground:#F5F7FA; --surface:#FFFFFF; --surface-2:#EDF1F7;
+  --ink:#0F1A2C; --ink-2:#48566B; --ink-3:#77859A;
+  --line:#DCE3EC; --line-strong:#C3CDDA;
+  --accent:#B0202C; --accent-ink:#8E1A24; --accent-soft:#FBE9EB;
+  --navy:#14264A;
   --am:#155E8B; --am-soft:#E2EFF8;
   --pm:#7A4A0E; --pm-soft:#FAEFDC;
   --open:#1F6146; --open-soft:#E2F1EA;
-  --shadow:0 1px 2px rgba(15,26,44,.06), 0 8px 24px -16px rgba(15,26,44,.28);
+  --shadow:0 1px 2px rgba(15,26,44,.05), 0 10px 26px -18px rgba(15,26,44,.30);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --ground:#0B1120; --surface:#141D2E; --surface-2:#1C2739;
-    --ink:#E9EEF6; --ink-2:#A4B1C4; --ink-3:#6E7D93;
+    --ink:#E9EEF6; --ink-2:#A6B3C6; --ink-3:#72819A;
     --line:#26324A; --line-strong:#36455F;
     --accent:#FF7B81; --accent-ink:#FF9AA0; --accent-soft:#3B191D;
+    --navy:#0E1830;
     --am:#86C4EA; --am-soft:#122C40;
     --pm:#E9BC6D; --pm-soft:#33260F;
     --open:#7FD0A9; --open-soft:#12301F;
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 26px -18px rgba(0,0,0,.8);
   }
 }
 :root[data-theme="dark"]{
   --ground:#0B1120; --surface:#141D2E; --surface-2:#1C2739;
-  --ink:#E9EEF6; --ink-2:#A4B1C4; --ink-3:#6E7D93;
+  --ink:#E9EEF6; --ink-2:#A6B3C6; --ink-3:#72819A;
   --line:#26324A; --line-strong:#36455F;
   --accent:#FF7B81; --accent-ink:#FF9AA0; --accent-soft:#3B191D;
+  --navy:#0E1830;
   --am:#86C4EA; --am-soft:#122C40;
   --pm:#E9BC6D; --pm-soft:#33260F;
   --open:#7FD0A9; --open-soft:#12301F;
-  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 26px -18px rgba(0,0,0,.8);
 }
 
 *{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
 body{
-  background:var(--ground); color:var(--ink);
+  margin:0; background:var(--ground); color:var(--ink);
   font-family:"Public Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:1120px; margin:0 auto; padding-inline:18px; padding-block:0}
+a{color:var(--accent-ink)}
+.wrap{max-width:1120px; margin:0 auto; padding-inline:18px}
+.mono{font-family:"JetBrains Mono", ui-monospace, monospace}
 
-header.masthead{padding-block:38px 20px}
+/* ---------- masthead ---------- */
+.band{height:6px; background:linear-gradient(90deg, var(--accent) 0 70%, var(--navy) 70% 100%)}
+header.masthead{padding-block:34px 18px}
 .kicker{
   font-family:"JetBrains Mono", ui-monospace, monospace;
   font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
@@ -68,48 +70,55 @@ header.masthead{padding-block:38px 20px}
 }
 h1{
   font-family:"Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
-  font-weight:800; font-size:clamp(34px, 7vw, 56px); line-height:1.02;
-  letter-spacing:-.02em; margin:0 0 14px; text-wrap:balance;
+  font-weight:800; font-size:clamp(34px, 7vw, 58px); line-height:1.0;
+  letter-spacing:-.025em; margin:0 0 12px; text-wrap:balance;
 }
-.standfirst{margin:0; max-width:62ch; color:var(--ink-2); font-size:16px}
-.sourceline{
-  margin:16px 0 0; font-family:"JetBrains Mono", ui-monospace, monospace;
-  font-size:11.5px; color:var(--ink-3);
+.standfirst{margin:0; max-width:56ch; color:var(--ink-2); font-size:16.5px}
+.stats{display:flex; flex-wrap:wrap; gap:8px; margin-top:18px}
+.stat{
+  display:flex; align-items:baseline; gap:7px;
+  background:var(--surface); border:1px solid var(--line); border-radius:999px;
+  padding:6px 13px; font-size:13px; color:var(--ink-2);
 }
+.stat b{font-family:"JetBrains Mono", ui-monospace, monospace; font-size:13.5px; color:var(--ink); font-variant-numeric:tabular-nums}
 
-.tabs{display:flex; border-bottom:2px solid var(--ink); margin-top:20px}
+/* ---------- tabs ---------- */
+.tabs{display:flex; gap:2px; border-bottom:2px solid var(--ink); margin-top:22px; overflow-x:auto; scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
 .tabs button{
   font:inherit; font-family:"Bricolage Grotesque", sans-serif; font-weight:700; font-size:16px;
-  cursor:pointer; background:none; border:none; color:var(--ink-3);
-  padding:10px 18px; margin-bottom:-2px; border-bottom:3px solid transparent;
+  cursor:pointer; background:none; border:none; color:var(--ink-3); white-space:nowrap;
+  padding:10px 16px; margin-bottom:-2px; border-bottom:3px solid transparent;
 }
 .tabs button:hover{color:var(--ink)}
 .tabs button[aria-selected="true"]{color:var(--ink); border-bottom-color:var(--accent)}
 .tabs button:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
 
+/* ---------- weekly panel ---------- */
 .standing{
-  margin-top:20px; border:1px solid var(--line); border-left:3px solid var(--accent);
-  background:var(--surface); border-radius:4px; padding:15px 17px;
+  margin-top:20px; border:1px solid var(--line); border-left:4px solid var(--accent);
+  background:var(--surface); border-radius:6px; padding:14px 17px;
 }
-.standing h2{
+.label{
   font-family:"JetBrains Mono", ui-monospace, monospace;
   font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
-  color:var(--ink-3); margin:0 0 11px;
+  color:var(--ink-3); margin:0 0 10px;
 }
-.standing ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px 26px}
+.standing ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px 28px}
 .standing li{display:flex; gap:10px; align-items:baseline}
 .standing b{font-weight:600}
 .standing span{color:var(--ink-2); font-size:14px}
 
+/* ---------- controls ---------- */
 .controls{
-  position:sticky; top:env(safe-area-inset-top, 0px); z-index:5;
+  position:sticky; top:0; z-index:5;
   background:var(--ground); padding-block:14px 11px; margin-top:6px;
   border-bottom:1px solid var(--line);
   display:flex; flex-wrap:wrap; gap:10px; align-items:center;
 }
 .controls input{
-  flex:1 1 220px; min-width:0; font:inherit; color:var(--ink);
-  background:var(--surface); border:1px solid var(--line-strong); border-radius:3px;
+  flex:1 1 220px; min-width:0; font:inherit; font-size:16px; color:var(--ink);
+  background:var(--surface); border:1px solid var(--line-strong); border-radius:6px;
   padding:9px 12px;
 }
 .controls input::placeholder{color:var(--ink-3)}
@@ -128,16 +137,17 @@ h1{
   color:var(--ink-3); margin-left:auto; white-space:nowrap;
 }
 
+/* ---------- calendar ---------- */
 .cal{padding-block:20px 8px; display:flex; flex-direction:column; gap:22px}
-.day{display:grid; grid-template-columns:118px 1fr; gap:14px; align-items:start}
-.daystamp{position:sticky; top:calc(env(safe-area-inset-top, 0px) + 62px)}
+.day{display:grid; grid-template-columns:110px 1fr; gap:14px; align-items:start}
+.daystamp{position:sticky; top:66px}
 .dow{
   font-family:"JetBrains Mono", ui-monospace, monospace;
   font-size:10.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3);
 }
 .dnum{
   font-family:"Bricolage Grotesque", sans-serif; font-weight:800;
-  font-size:26px; line-height:1.1; letter-spacing:-.02em; font-variant-numeric:tabular-nums;
+  font-size:28px; line-height:1.05; letter-spacing:-.02em; font-variant-numeric:tabular-nums;
 }
 .day.is-today .dnum, .day.is-today .dow{color:var(--accent-ink)}
 .dmon{
@@ -150,18 +160,18 @@ h1{
   background:var(--accent-soft); color:var(--accent-ink); padding:2px 7px; border-radius:3px;
 }
 .events{display:flex; flex-direction:column; gap:1px; background:var(--line);
-  border:1px solid var(--line); border-radius:5px; overflow:hidden}
+  border:1px solid var(--line); border-radius:8px; overflow:hidden; box-shadow:var(--shadow)}
 .ev{
   background:var(--surface); padding:12px 15px;
-  display:grid; grid-template-columns:74px 1fr auto; gap:4px 14px; align-items:baseline;
+  display:grid; grid-template-columns:76px 1fr auto; gap:4px 14px; align-items:baseline;
 }
-.ev.past{opacity:.62}
+.ev.past{opacity:.6}
 .evtime{
   font-family:"JetBrains Mono", ui-monospace, monospace; font-size:12.5px; font-weight:700;
   font-variant-numeric:tabular-nums; color:var(--ink-2); white-space:nowrap;
 }
-.evtitle{font-size:15px; font-weight:500; min-width:0; overflow-wrap:anywhere}
-.evmeta{grid-column:2/-1; font-size:13px; color:var(--ink-2)}
+.evtitle{font-size:15px; font-weight:600; min-width:0; overflow-wrap:anywhere}
+.evmeta{grid-column:2/-1; font-size:13px; color:var(--ink-2); min-width:0; overflow-wrap:anywhere}
 .evmeta em{font-style:normal; color:var(--ink-3)}
 .kind{
   font-family:"JetBrains Mono", ui-monospace, monospace;
@@ -175,15 +185,17 @@ h1{
 .kind.school{background:var(--surface-2); color:var(--ink-3)}
 .kind.event{background:var(--surface-2); color:var(--ink-2)}
 
+/* ---------- directory ---------- */
 .grid{
   display:grid; gap:14px; padding-block:20px 8px;
   grid-template-columns:repeat(auto-fill, minmax(290px, 1fr));
 }
 .card{
-  background:var(--surface); border:1px solid var(--line); border-radius:5px;
+  background:var(--surface); border:1px solid var(--line); border-radius:8px;
   padding:16px 17px 15px; display:flex; flex-direction:column; gap:11px; box-shadow:var(--shadow);
+  min-width:0;
 }
-.card.fresh{border-left:3px solid var(--accent)}
+.card.fresh{border-left:4px solid var(--accent)}
 .card-top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px}
 .cat{
   font-family:"JetBrains Mono", ui-monospace, monospace;
@@ -212,32 +224,48 @@ dt{
   font-size:10px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
   color:var(--ink-3); padding-top:2px;
 }
-dd{margin:0; font-size:14px; color:var(--ink); font-variant-numeric:tabular-nums}
+dd{margin:0; font-size:14px; color:var(--ink); font-variant-numeric:tabular-nums; min-width:0; overflow-wrap:anywhere}
 dd.muted{color:var(--ink-2)}
 .note{margin:0; padding-top:10px; border-top:1px solid var(--line); font-size:13px; color:var(--ink-2)}
-.flag{color:var(--accent-ink); font-style:italic}
+.flag{display:block; margin-top:6px; color:var(--accent-ink); font-style:italic}
+
+/* ---------- info ---------- */
+.info{display:grid; gap:14px; padding-block:22px 8px; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); align-items:start}
+.panel{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:17px 18px; box-shadow:var(--shadow); min-width:0}
+.panel h2{font-family:"Bricolage Grotesque", sans-serif; font-weight:700; font-size:19px; margin:0 0 12px; letter-spacing:-.01em}
+.rows{list-style:none; margin:0; padding:0; display:flex; flex-direction:column}
+.rows li{display:flex; justify-content:space-between; gap:12px; padding:9px 0; border-top:1px solid var(--line); font-size:14px}
+.rows li:first-child{border-top:none; padding-top:0}
+.rows .k{color:var(--ink)}
+.rows .v{color:var(--ink-2); text-align:right}
+.links{list-style:none; margin:0; padding:0; display:flex; flex-direction:column}
+.links a{
+  display:flex; justify-content:space-between; align-items:center; gap:10px;
+  padding:10px 0; border-top:1px solid var(--line); text-decoration:none; color:var(--ink); font-size:14.5px;
+}
+.links li:first-child a{border-top:none; padding-top:0}
+.links a span{color:var(--ink-3); font-size:13px}
+.links a:hover{color:var(--accent-ink)}
+.links a::after{content:"↗"; color:var(--ink-3); font-size:13px}
+.small{font-size:13px; color:var(--ink-3); margin:12px 0 0}
 
 .state{padding:44px 12px; text-align:center; color:var(--ink-3); font-size:15px; grid-column:1/-1}
 
 footer{
-  margin-top:26px; padding-block:24px 44px; border-top:1px solid var(--line);
-  color:var(--ink-2); font-size:13.5px;
+  margin-top:30px; padding-block:22px 44px; border-top:1px solid var(--line);
+  color:var(--ink-3); font-size:13px;
 }
-footer h2{
-  font-family:"JetBrains Mono", ui-monospace, monospace;
-  font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
-  color:var(--ink-3); margin:0 0 10px;
-}
-footer p{margin:0 0 10px; max-width:70ch}
-footer a{color:var(--accent-ink)}
+footer p{margin:0; max-width:70ch}
 
 @media (max-width:640px){
-  header.masthead{padding-block:26px 14px}
-  h1{font-size:clamp(28px, 8.5vw, 40px); margin-bottom:10px}
+  .wrap{padding-inline:16px}
+  header.masthead{padding-block:24px 12px}
+  h1{font-size:clamp(32px, 10vw, 42px); margin-bottom:10px}
   .standfirst{font-size:15px}
-  .sourceline{margin-top:12px}
+  .stats{margin-top:14px}
+  .stat{font-size:12.5px; padding:5px 11px}
   .tabs{margin-top:16px}
-  .tabs button{padding:9px 14px; font-size:15px}
+  .tabs button{padding:9px 12px; font-size:15px}
   .standing{margin-top:16px; padding:13px 15px}
   .standing ul{flex-direction:column; gap:9px}
   .standing li{flex-direction:column; gap:1px}
@@ -254,28 +282,31 @@ footer a{color:var(--accent-ink)}
   .evmeta{grid-column:1/-1}
   .controls input{flex:1 1 100%}
   .count{margin-left:0; width:100%}
+  .grid, .info{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
 </style>
 
-<script id="patriot-data" type="application/json">{"updated": "2026-09-19", "clubs": [{"cat": "Arts", "cost": "—", "full": "Open studio", "lastHeard": "2026-09-08", "name": "Art Club", "note": "Anyone can join — the announcements stress that zero art experience is required.", "tag": "pm", "when": "After school", "where": "Room 510", "who": "Ms. Black", "id": "art-club"}, {"cat": "Sport", "cost": "—", "full": "Interest meeting held Sep 1", "lastHeard": "2026-08-17", "name": "Baseball", "note": "The Sep 1 interest meeting was for students and parents together. Contact Coach Powell if you missed it.", "tag": "pm", "when": "Evening meeting, 6:00 PM", "where": "Cafeteria", "who": "Coach Powell", "id": "baseball"}, {"cat": "Club", "cost": "—", "full": "One-to-one friendships", "lastHeard": "2026-09-11", "name": "Best Buddies", "note": "Pairs general-education students with Northside students with special needs. Applications closed Sep 11 — ask Ms. Mason whether it reopens.", "tag": "open", "when": "By application", "where": "Room 311", "who": "Ms. Mason", "id": "best-buddies"}, {"cat": "Club", "cost": "—", "full": "Leadership & service program", "lastHeard": "2026-09-11", "name": "Chick-fil-A Leadership Academy", "note": "Apply on the Northside Communications Canvas page.", "tag": "open", "when": "By application", "where": "Room 311", "who": "Ms. Mason", "id": "cfa-leadership-academy"}, {"cat": "Sport", "cost": "—", "full": "Competition & sideline", "lastHeard": "2026-08-21", "name": "Cheerleading", "note": "Competition season runs alongside football; squads cheer pep rallies and games.", "tag": "open", "when": "In season", "where": "—", "who": "—", "id": "cheerleading"}, {"cat": "Club", "cost": "—", "full": "Current events discussion", "lastHeard": "2026-08-25", "name": "Club America", "note": "For conversation about current events in an open, civil environment.", "tag": "pm", "when": "After school", "where": "Room 102", "who": "—", "id": "club-america"}, {"cat": "Club", "cost": "—", "full": "Writing, poetry & D&D", "lastHeard": "2026-08-27", "name": "Creative Writing Club", "note": "All writing levels and styles welcome, explicitly including students who want to run D&D campaigns.", "tag": "pm", "when": "After school, 4:05 PM", "where": "Room 108", "who": "Ms. Fischer", "id": "creative-writing"}, {"cat": "Sport", "cost": "—", "full": "Running team", "lastHeard": "2026-08-07", "name": "Cross Country", "note": "No meeting time announced — the instruction was simply to go see Ms. Fischer in room 108.", "tag": "open", "when": "See sponsor", "where": "Room 108", "who": "Ms. Fischer", "id": "cross-country"}, {"cat": "Club", "cost": "—", "full": "Marketing & business competition", "lastHeard": "2026-09-08", "name": "DECA", "note": "Meeting dates and events are posted on the DECA Canvas page. Email Mr. Hart to be added to it.", "tag": "pm", "when": "Directly after school", "where": "Room 917", "who": "Ms. Gentry & Mr. Hart", "id": "deca"}, {"cat": "Club", "cost": "Dues by Sep 25", "full": "Future Business Leaders of America", "lastHeard": "2026-09-21", "name": "FBLA", "note": "Pay dues in room 514 or online through My Payments Plus. Business and computer-science competition events.", "tag": "pm", "when": "Next meeting Oct 7", "where": "Room 514", "who": "Ms. Killingsworth", "id": "fbla"}, {"cat": "Club", "cost": "$35 dues", "full": "Family, Career & Community Leaders of America", "lastHeard": "2026-09-21", "name": "FCCLA", "note": "Join before the end of September. Service-focused — members average about 20 hours a year, which counts toward NHS and college applications.", "tag": "pm", "when": "Directly after school", "where": "Room 202", "who": "Ms. Lindblad", "id": "fccla"}, {"cat": "Sport", "cost": "Physical required", "full": "Girls flag football", "lastHeard": "2026-09-09", "name": "Flag Football", "note": "Tryouts were Sep 8 for 9th–10th and Sep 9 for 11th–12th. Paperwork and an updated physical were due Sep 3.", "tag": "pm", "when": "Tryouts, 4:30 PM", "where": "Baseball field", "who": "Coach Ingram & Ms. Gilley", "id": "flag-football"}, {"cat": "Sport", "cost": "Tickets on GoFan", "full": "Varsity football", "lastHeard": "2026-09-21", "name": "Football", "note": "Homecoming game is Thursday, Oct 1 at 7:00 PM, with the court presented at halftime.", "tag": "open", "when": "In season", "where": "Kinnett Stadium", "who": "—", "id": "football"}, {"cat": "Sport", "cost": "—", "full": "Interest meeting Sep 28", "lastHeard": "2026-09-21", "name": "Girls Soccer", "note": "Interest meeting Monday, Sep 28, immediately after school.", "tag": "pm", "when": "Right after school", "where": "Room 504", "who": "Coach Branch", "id": "girls-soccer"}, {"cat": "Club", "cost": "$20 dues + $25 shirt", "full": "Health Occupations Students of America", "lastHeard": "2026-09-21", "name": "HOSA", "note": "Apply via the HOSA Google form. Meetings so far: Aug 18 and Sep 23, both before school.", "tag": "am", "when": "Before school, 8:10 AM", "where": "Room 506", "who": "Ms. McNelly & Coach Branch", "id": "hosa"}, {"cat": "Arts", "cost": "—", "full": "Band & color guard", "lastHeard": "2026-08-17", "name": "Marching Band", "note": "Rehearses in the student parking lot after school most days in the fall, which is why drivers are asked to clear out quickly.", "tag": "pm", "when": "Most afternoons, fall", "where": "Student parking lot", "who": "—", "id": "marching-band"}, {"cat": "Academic team", "cost": "—", "flag": "Sponsor name is garbled in the captions — confirm before you go.", "full": "Competition math", "lastHeard": "2026-08-27", "name": "Math Team", "note": "Counts as a qualifying competition for the academic letter.", "tag": "pm", "when": "After school", "where": "Room 935", "who": "Mr. Fa", "id": "math-team"}, {"cat": "Academic team", "cost": "—", "full": "Model United Nations", "lastHeard": "2026-08-18", "name": "Model UN", "note": "New this year. Pitched to students who like debate, research, and politics.", "tag": "pm", "when": "After school, 4:00 PM", "where": "Room 607", "who": "Student founders", "id": "model-un"}, {"cat": "Honor society", "cost": "$20 dues", "full": "Mathematics honor society", "lastHeard": "2026-08-20", "name": "Mu Alpha Theta", "note": "Requires Advanced Algebra or higher and a 3.0 or better in all previous math classes. Dues cover membership and, for seniors, graduation regalia.", "tag": "pm", "when": "After school, 4:05 PM", "where": "Room 914", "who": "—", "id": "mu-alpha-theta"}, {"cat": "Club", "cost": "—", "full": "Cultures & community", "lastHeard": "2026-09-17", "name": "Multicultural Club", "note": "Meets roughly monthly on Thursdays. Members describe it as a place to learn about new cultures and each other.", "tag": "pm", "when": "After school, 4:00 PM", "where": "Room 103", "who": "Ms. Raheem", "id": "multicultural-club"}, {"cat": "Honor society", "cost": "—", "full": "NHS", "lastHeard": "2026-09-18", "name": "National Honor Society", "note": "Meetings are for already-inducted members. The fall interest meeting was Sep 1 in the art room (510) with Ms. Black.", "tag": "am", "when": "Before school, 8:15 AM", "where": "Senior cafeteria", "who": "Ms. Mobley", "id": "nhs"}, {"cat": "Club", "cost": "—", "full": "Student organization", "lastHeard": "2026-08-07", "name": "Northside Sisterhood", "note": "Listed among the school's clubs in August but never given a meeting time or sponsor on air.", "tag": "open", "when": "Not yet announced", "where": "—", "who": "—", "id": "northside-sisterhood"}, {"cat": "Academic team", "cost": "—", "full": "Literature competition team", "lastHeard": "2026-08-20", "name": "Reading Bowl", "note": "Named only as a qualifying competition for the academic letter. No meeting details announced yet.", "tag": "open", "when": "Not yet announced", "where": "—", "who": "—", "id": "reading-bowl"}, {"cat": "Sport", "cost": "Valid physical required", "full": "Varsity rifle team", "lastHeard": "2026-08-13", "name": "Rifle", "note": "You do not have to be enrolled in JROTC to try out. Training happens in the JROTC classrooms.", "tag": "pm", "when": "Tryouts ran Aug 24 – Sep 3", "where": "JROTC classroom A", "who": "—", "id": "rifle"}, {"cat": "Academic team", "cost": "—", "flag": "Announced as room 514 one day and room 608 the next — 608 was the later correction.", "full": "FIRST Tech Challenge", "lastHeard": "2026-08-25", "name": "Robotics (FTC)", "note": "Robotics engineering. Interest meeting was Aug 26.", "tag": "pm", "when": "After school, 4:00–4:30 PM", "where": "Room 608", "who": "—", "id": "robotics-ftc"}, {"cat": "Honor society", "cost": "—", "full": "Science National Honor Society", "lastHeard": "2026-09-10", "name": "Science NHS", "note": "Juniors and seniors with a 3.0 overall, 3.5 in science, enrolled in an AP/honors/dual-enrollment science class with a B or better. Strong sophomores considered. Applications closed Sep 2.", "tag": "am", "when": "Before school, 8:10 AM", "where": "Room 407", "who": "Ms. Odum & Ms. Cohen", "id": "science-nhs"}, {"cat": "Club", "cost": "—", "full": "Class of 2027", "lastHeard": "2026-09-21", "name": "Senior Class Council", "note": "Monthly meetings. Plans the senior picnic, class day, luncheon, senior skit, class shirts, senior parent night, and graduation duties. Applications ran Aug 14 – Sep 4; join the group Meet.", "tag": "am", "when": "Before school, 8:00 AM sharp", "where": "Ms. Hoffman's room", "who": "Ms. Hoffman", "id": "senior-class-council"}, {"cat": "Club", "cost": "—", "full": "Career & technical leadership", "lastHeard": "2026-08-17", "name": "SkillsUSA", "note": "Covers engineering, drafting, fire science, robotics, and debate events.", "tag": "pm", "when": "After school", "where": "Room 200", "who": "Mr. Cox & Mr. Jeffcoat", "id": "skillsusa"}, {"cat": "Sport", "cost": "$7 on GoFan", "full": "Lady Pats softball", "lastHeard": "2026-09-21", "name": "Softball", "note": "JV typically throws first pitch around 5:45 PM with varsity following at 7:00 PM.", "tag": "open", "when": "In season", "where": "The Rock", "who": "—", "id": "softball"}, {"cat": "Sport", "cost": "—", "full": "Swim team", "lastHeard": "2026-08-17", "name": "Swim", "note": "Interest meeting was Aug 17 at 8:15 AM. See Coach Trewick directly if you missed it.", "tag": "am", "when": "Season meetings before school", "where": "Room 936", "who": "Coach Trewick", "id": "swim"}, {"cat": "Arts", "cost": "—", "full": "Literary magazine", "lastHeard": "2026-08-18", "name": "The Lantern", "note": "This year's theme is Throughout the Years — infancy, childhood, adolescence, adulthood. Accepts creative writing, art, and photography; theme is encouraged, not required.", "tag": "open", "when": "Submissions open", "where": "Room 109", "who": "Ms. Hoffman", "id": "the-lantern"}, {"cat": "Arts", "cost": "—", "full": "Drama department", "lastHeard": "2026-09-02", "name": "Theater & Thespians", "note": "Sign-up board is outside room 512. Fall one-act is Peter and the Starcatcher for GHSA competition; tech crew interviews run alongside auditions.", "tag": "pm", "when": "After school, 4:05 PM", "where": "Room 512", "who": "Mr. Phillips", "id": "theater"}, {"cat": "Club", "cost": "—", "full": "Technology Student Association", "lastHeard": "2026-08-12", "name": "TSA", "note": "Over 75 technology competition events. Open to every student, not just engineering pathway kids.", "tag": "pm", "when": "After school", "where": "Room 608", "who": "Student officers", "id": "tsa"}, {"cat": "Sport", "cost": "Tickets on GoFan", "full": "JV & varsity", "lastHeard": "2026-09-21", "name": "Volleyball", "note": "Senior night is Wednesday, Sep 23 at 5:15 PM vs. Brookstone — the theme is Hawaiian.", "tag": "open", "when": "In season", "where": "Home & away", "who": "—", "id": "volleyball"}, {"cat": "Sport", "cost": "—", "full": "Preseason workouts", "lastHeard": "2026-08-25", "name": "Wrestling", "note": "Workouts started Aug 24 and run every Monday and Wednesday. Meet Coach Smith in the atrium right after school.", "tag": "pm", "when": "Mon & Wed, 4:15–5:15 PM", "where": "Meet in the atrium", "who": "Coach Smith (rm 100) & Coach DJ", "id": "wrestling"}, {"cat": "Arts", "cost": "—", "full": "Student yearbook staff", "lastHeard": "2026-08-07", "name": "Yearbook", "note": "Collecting student photos — summer travel, Northside summer programs, first-day pictures — through a QR code shown on air.", "tag": "open", "when": "Submissions open", "where": "—", "who": "—", "id": "yearbook"}], "events": [{"date": "2026-08-11", "kind": "tryout", "note": "GHSA competition show. No experience needed; sign-up board outside room 512.", "time": "16:30", "title": "One-act auditions — Peter and the Starcatcher", "where": "Auditorium", "who": "Mr. Phillips", "id": "2026-08-11-one-act-auditions"}, {"date": "2026-08-12", "kind": "meeting", "note": "Started promptly at 8:15.", "time": "08:15", "title": "Flag football interest meeting", "where": "Senior cafeteria", "who": "", "id": "2026-08-12-flag-football-interest"}, {"date": "2026-08-12", "kind": "meeting", "note": "", "time": "16:15", "title": "Rifle team interest meeting", "where": "JROTC classroom A", "who": "", "id": "2026-08-12-rifle-interest"}, {"date": "2026-08-12", "kind": "meeting", "note": "Engineering, drafting, fire science, robotics, debate.", "time": "", "title": "SkillsUSA first interest meeting", "where": "Room 200", "who": "Mr. Cox & Mr. Jeffcoat", "id": "2026-08-12-skillsusa"}, {"date": "2026-08-12", "kind": "meeting", "note": "Open to all students, not just the engineering pathway.", "time": "", "title": "TSA interest meeting", "where": "Room 608", "who": "", "id": "2026-08-12-tsa"}, {"date": "2026-08-13", "kind": "tryout", "note": "Sign-up board is outside room 512.", "time": "", "title": "One-act tech crew interviews", "where": "Room 512", "who": "Mr. Phillips", "id": "2026-08-13-one-act-tech"}, {"date": "2026-08-15", "kind": "event", "note": "$7, cash only, all proceeds to the team.", "time": "11:00", "title": "Cross country car wash", "where": "Northside parking lot", "who": "", "id": "2026-08-15-xc-car-wash"}, {"date": "2026-08-17", "kind": "event", "note": "3 to 10 PM. Drop your receipt in the bucket at the host stand.", "time": "15:00", "title": "Swim team dine-to-donate", "where": "Texas Roadhouse", "who": "", "id": "2026-08-17-swim-fundraiser"}, {"date": "2026-08-17", "kind": "meeting", "note": "New and returning swimmers.", "time": "08:15", "title": "Swim team interest meeting", "where": "Room 936", "who": "Coach Trewick", "id": "2026-08-17-swim-interest"}, {"date": "2026-08-18", "kind": "meeting", "note": "Leadership elections and upcoming events. Dues $20, shirt $25.", "time": "08:15", "title": "HOSA first meeting", "where": "Room 506", "who": "Ms. McNelly", "id": "2026-08-18-hosa-first"}, {"date": "2026-08-19", "kind": "meeting", "note": "Directly after school.", "time": "", "title": "DECA first meeting", "where": "Room 917", "who": "Ms. Gentry & Mr. Hart", "id": "2026-08-19-deca-first"}, {"date": "2026-08-19", "kind": "meeting", "note": "After school.", "time": "", "title": "FBLA interest meeting", "where": "Room 514", "who": "Ms. Killingsworth", "id": "2026-08-19-fbla-interest"}, {"date": "2026-08-19", "kind": "meeting", "note": "New club this year.", "time": "16:00", "title": "Model UN interest meeting", "where": "Room 607", "who": "", "id": "2026-08-19-model-un"}, {"date": "2026-08-20", "kind": "meeting", "note": "Advanced Algebra or higher and a 3.0 in previous math. Dues $20.", "time": "16:05", "title": "Mu Alpha Theta interest meeting", "where": "Room 914", "who": "", "id": "2026-08-20-mu-alpha-theta"}, {"date": "2026-08-21", "kind": "game", "note": "Season opener. Pats won 29–6.", "time": "20:00", "title": "Football at Smith Station — blackout game", "where": "TC Britain Field", "who": "", "id": "2026-08-21-football-smith-station"}, {"date": "2026-08-24", "kind": "tryout", "note": "Ran through Sep 3. Valid physical required; JROTC enrollment is not.", "time": "", "title": "Rifle team tryouts begin", "where": "JROTC classroom A", "who": "", "id": "2026-08-24-rifle-tryouts"}, {"date": "2026-08-24", "kind": "tryout", "note": "Every Monday and Wednesday, 4:15 to 5:15.", "time": "16:15", "title": "Wrestling preseason workouts begin", "where": "Meet in the atrium", "who": "Coach Smith & Coach DJ", "id": "2026-08-24-wrestling-start"}, {"date": "2026-08-25", "kind": "meeting", "note": "All writing levels, and D&D campaigns, welcome.", "time": "16:05", "title": "Creative Writing Club interest meeting", "where": "Room 108", "who": "Ms. Fischer", "id": "2026-08-25-creative-writing-interest"}, {"date": "2026-08-25", "kind": "meeting", "note": "Directly after school.", "time": "", "title": "FCCLA first meeting", "where": "Room 202", "who": "Ms. Lindblad", "id": "2026-08-25-fccla-first"}, {"date": "2026-08-25", "kind": "school", "note": "Walk the class schedule and meet teachers. The international travel meeting followed at 7:30 in room 514.", "time": "18:00", "title": "Open house", "where": "", "who": "", "id": "2026-08-25-open-house"}, {"date": "2026-08-26", "kind": "school", "note": "No yearbook photo means no yearbook appearance.", "time": "", "title": "Picture day — 9th through 11th grade", "where": "", "who": "", "id": "2026-08-26-picture-day"}, {"date": "2026-08-26", "flag": "Announced as room 514 the day before, corrected to 608.", "kind": "meeting", "note": "4:00 to 4:30 PM.", "time": "16:00", "title": "Robotics FTC interest meeting", "where": "Room 608", "who": "", "id": "2026-08-26-robotics-ftc"}, {"date": "2026-08-27", "kind": "meeting", "note": "Directly after school.", "time": "", "title": "Math Team interest meeting", "where": "Room 935", "who": "", "id": "2026-08-27-math-team"}, {"date": "2026-08-27", "kind": "meeting", "note": "", "time": "16:00", "title": "Multicultural Club first meeting", "where": "Room 103", "who": "Ms. Raheem", "id": "2026-08-27-multicultural-first"}, {"date": "2026-08-29", "flag": "Announced as Aug 26 on one broadcast and Aug 29 on two others.", "kind": "meeting", "note": "Current events discussion.", "time": "", "title": "Club America first meeting", "where": "Room 102", "who": "", "id": "2026-08-29-club-america"}, {"date": "2026-08-31", "kind": "meeting", "note": "", "time": "16:00", "title": "Creative Writing Club meeting", "where": "Room 108", "who": "Ms. Fischer", "id": "2026-08-31-creative-writing"}, {"date": "2026-09-01", "kind": "meeting", "note": "For students and parents together.", "time": "18:00", "title": "Baseball interest meeting", "where": "Cafeteria", "who": "Coach Powell", "id": "2026-09-01-baseball-interest"}, {"date": "2026-09-01", "kind": "meeting", "note": "Directly after school.", "time": "", "title": "NHS interest meeting", "where": "Room 510, art room", "who": "Ms. Black", "id": "2026-09-01-nhs-interest"}, {"date": "2026-09-02", "kind": "meeting", "note": "All welcome; bring dues.", "time": "", "title": "FBLA meeting", "where": "Room 514", "who": "", "id": "2026-09-02-fbla"}, {"date": "2026-09-02", "kind": "meeting", "note": "Department info, new officers, upcoming Thespian business.", "time": "16:05", "title": "Thespian meeting", "where": "Room 512", "who": "Mr. Phillips", "id": "2026-09-02-thespians"}, {"date": "2026-09-03", "kind": "deadline", "note": "", "time": "", "title": "Flag football paperwork & physical due", "where": "Coach Ingram's office or Ms. Gilley's classroom", "who": "", "id": "2026-09-03-flag-football-paperwork"}, {"date": "2026-09-08", "kind": "meeting", "note": "No art experience required.", "time": "", "title": "Art Club first meeting", "where": "Room 510", "who": "Ms. Black", "id": "2026-09-08-art-club"}, {"date": "2026-09-08", "kind": "tryout", "note": "", "time": "16:30", "title": "Flag football tryouts — 9th & 10th grade", "where": "Baseball field", "who": "Coach Ingram & Ms. Gilley", "id": "2026-09-08-flag-football-lower"}, {"date": "2026-09-09", "kind": "tryout", "note": "", "time": "16:30", "title": "Flag football tryouts — 11th & 12th grade", "where": "Baseball field", "who": "Coach Ingram & Ms. Gilley", "id": "2026-09-09-flag-football-upper"}, {"date": "2026-09-10", "kind": "meeting", "note": "", "time": "08:10", "title": "Science NHS first meeting", "where": "Room 407", "who": "Ms. Odum & Ms. Cohen", "id": "2026-09-10-science-nhs"}, {"date": "2026-09-11", "kind": "deadline", "note": "", "time": "", "title": "Best Buddies application deadline", "where": "Northside Communications Canvas page", "who": "Ms. Mason", "id": "2026-09-11-best-buddies-deadline"}, {"date": "2026-09-11", "kind": "game", "note": "First home game of the season. Pats won 33–30 on a touchdown with 7 seconds left.", "time": "19:00", "title": "Football home vs. Lovejoy — neon game", "where": "Kinnett Stadium", "who": "", "id": "2026-09-11-football-lovejoy"}, {"date": "2026-09-15", "kind": "game", "note": "", "time": "18:30", "title": "Varsity volleyball at Newnan", "where": "Away", "who": "", "id": "2026-09-15-volleyball-newnan"}, {"date": "2026-09-17", "kind": "meeting", "note": "", "time": "16:00", "title": "Multicultural Club meeting", "where": "Room 103", "who": "Ms. Raheem", "id": "2026-09-17-multicultural"}, {"date": "2026-09-17", "kind": "game", "note": "JV first pitch 5:45, varsity 7:00. $7 on GoFan.", "time": "17:45", "title": "Softball home game", "where": "The Rock", "who": "", "id": "2026-09-17-softball-home"}, {"date": "2026-09-18", "kind": "game", "note": "", "time": "", "title": "Football at Langston Hughes", "where": "Away, Atlanta", "who": "", "id": "2026-09-18-football-langston"}, {"date": "2026-09-18", "kind": "game", "note": "Playing both Harris County and Columbus High.", "time": "18:00", "title": "JV volleyball at Harris County", "where": "Away", "who": "", "id": "2026-09-18-jv-volleyball"}, {"date": "2026-09-18", "kind": "meeting", "note": "For already-inducted members.", "time": "08:15", "title": "NHS second meeting", "where": "Senior cafeteria", "who": "Ms. Mobley", "id": "2026-09-18-nhs"}, {"date": "2026-09-21", "kind": "school", "note": "Retakes require $5 in cash — no cash, no retake.", "time": "", "title": "Absentee & makeup picture day", "where": "Auditorium", "who": "Faculty and 9th–11th grade", "id": "2026-09-21-picture-makeup"}, {"date": "2026-09-21", "kind": "game", "note": "Announced as that night's game; no start time given on air.", "time": "", "title": "Softball home vs. Newnan", "where": "The Rock", "who": "", "id": "2026-09-21-softball-newnan"}, {"date": "2026-09-23", "kind": "deadline", "note": "Stated twice on air: no exceptions and no extensions.", "time": "16:00", "title": "Homecoming date approval forms due", "where": "Front office", "who": "", "id": "2026-09-23-hoco-date-forms"}, {"date": "2026-09-23", "kind": "meeting", "note": "Competition information for the year.", "time": "08:10", "title": "HOSA meeting", "where": "Room 506", "who": "Ms. McNelly & Coach Branch", "id": "2026-09-23-hosa"}, {"date": "2026-09-23", "kind": "deadline", "note": "Juniors with a 3.0 or higher, for National Merit qualification.", "time": "", "title": "PSAT registration deadline", "where": "Canvas form", "who": "", "id": "2026-09-23-psat-registration"}, {"date": "2026-09-23", "kind": "meeting", "note": "8:00 sharp. Join the group Meet first.", "time": "08:00", "title": "Senior Class Council — first meeting", "where": "Ms. Hoffman's room", "who": "Ms. Hoffman", "id": "2026-09-23-senior-council"}, {"date": "2026-09-23", "kind": "game", "note": "Hawaiian theme; gifts for the seniors welcome.", "time": "17:15", "title": "Volleyball senior night vs. Brookstone", "where": "Home", "who": "", "id": "2026-09-23-volleyball-senior-night"}, {"date": "2026-09-24", "kind": "school", "note": "Log into both Canvas and Teams for every class and attend the scheduled meetings, or it counts as an unexcused absence.", "time": "", "title": "Virtual learning day — district-wide", "where": "", "who": "", "id": "2026-09-24-virtual-day"}, {"date": "2026-09-25", "kind": "deadline", "note": "", "time": "", "title": "FBLA dues deadline", "where": "Room 514 or My Payments Plus", "who": "Ms. Killingsworth", "id": "2026-09-25-fbla-dues"}, {"date": "2026-09-25", "kind": "school", "note": "", "time": "", "title": "Student holiday — no school", "where": "", "who": "", "id": "2026-09-25-student-holiday"}, {"date": "2026-09-28", "kind": "meeting", "note": "Immediately after school.", "time": "", "title": "Girls soccer interest meeting", "where": "Room 504", "who": "Coach Branch", "id": "2026-09-28-girls-soccer"}, {"date": "2026-09-28", "kind": "event", "note": "$15.", "time": "", "title": "Homecoming dance tickets go on sale", "where": "GoFan", "who": "", "id": "2026-09-28-hoco-tickets"}, {"date": "2026-09-28", "kind": "event", "note": "Runs Sep 28 through Oct 2.", "time": "", "title": "Homecoming week begins", "where": "", "who": "", "id": "2026-09-28-hoco-week"}, {"date": "2026-09-30", "kind": "deadline", "note": "$35. Announced as “before the end of September.”", "time": "", "title": "FCCLA sign-up and dues deadline", "where": "Room 202", "who": "Ms. Lindblad", "id": "2026-09-30-fccla-dues"}, {"date": "2026-10-01", "kind": "game", "note": "Court presented at halftime, king and queen crowned.", "time": "19:00", "title": "Homecoming football game", "where": "Kinnett Stadium", "who": "", "id": "2026-10-01-hoco-game"}, {"date": "2026-10-02", "kind": "deadline", "note": "Space is limited.", "time": "", "title": "Financial aid night registration deadline", "where": "QR code shown on air", "who": "Ms. Dean", "id": "2026-10-02-finaid-registration"}, {"date": "2026-10-02", "kind": "event", "note": "8 to 10 PM.", "time": "20:00", "title": "Homecoming dance", "where": "Northside courtyard", "who": "", "id": "2026-10-02-hoco-dance"}, {"date": "2026-10-02", "kind": "deadline", "note": "Entrepreneurship competition; a Northside student won districtwide last year.", "time": "", "title": "Shine Competition application deadline", "where": "Startup Columbus website", "who": "Ms. Clay or any CTAE teacher", "id": "2026-10-02-shine-deadline"}, {"date": "2026-10-05", "kind": "event", "note": "FAFSA, HOPE and Zell Miller questions. Open to students and families.", "time": "18:00", "title": "Financial aid Q&A night", "where": "", "who": "Counseling department", "id": "2026-10-05-finaid-night"}, {"date": "2026-10-07", "kind": "meeting", "note": "", "time": "", "title": "FBLA meeting", "where": "Room 514", "who": "Ms. Killingsworth", "id": "2026-10-07-fbla-meeting"}, {"date": "2026-10-20", "kind": "deadline", "note": "", "time": "", "title": "PSAT $20 fee due", "where": "Counseling", "who": "", "id": "2026-10-20-psat-fee"}, {"date": "2026-10-21", "kind": "school", "note": "Tenth-grade PSAT scores do not count toward National Merit.", "time": "", "title": "PSAT at Northside", "where": "", "who": "", "id": "2026-10-21-psat"}]}</script>
+<script id="patriot-data" type="application/json">{"updated": "2026-09-23", "clubs": [{"cat": "Academic team", "cost": "—", "full": "Ten-event academic competition", "lastHeard": "2026-09-23", "name": "Academic Decathlon", "note": "Team academic competition. See Mrs. Seckinger to join.", "tag": "open", "when": "See sponsor", "where": "—", "who": "Mrs. Seckinger", "id": "academic-decathlon"}, {"cat": "Arts", "cost": "—", "full": "Open studio", "lastHeard": "2026-09-08", "name": "Art Club", "note": "Anyone can join — no art experience required.", "tag": "pm", "when": "After school", "where": "Room 510", "who": "Ms. Black", "id": "art-club"}, {"cat": "Sport", "cost": "—", "flag": "Head coach is listed differently across school sources (Powell, Woods) — confirm before you go.", "full": "Interest meeting held Sep 1", "lastHeard": "2026-08-17", "name": "Baseball", "note": "The Sep 1 interest meeting was for students and parents together. Contact Coach Powell if you missed it.", "tag": "pm", "when": "Evening meeting, 6:00 PM", "where": "Cafeteria", "who": "Coach Powell", "id": "baseball"}, {"cat": "Club", "cost": "—", "full": "One-to-one friendships", "lastHeard": "2026-09-11", "name": "Best Buddies", "note": "Pairs general-education students with Northside students with special needs. Applications closed Sep 11 — ask Ms. Mason whether it reopens.", "tag": "open", "when": "By application", "where": "Room 311", "who": "Ms. Mason", "id": "best-buddies"}, {"cat": "Club", "cost": "—", "flag": "Schedule comes from an older school page — confirm with the sponsor.", "full": "New releases, discussed over lunch", "lastHeard": "2026-09-23", "name": "Book Club", "note": "Picks recently released books to read and talk about over lunch.", "tag": "open", "when": "Some Fridays at lunch", "where": "Media center", "who": "Ms. Hostetter", "id": "book-club"}, {"cat": "Sport", "cost": "—", "full": "Winter sport", "lastHeard": "2026-09-23", "name": "Boys Basketball", "note": "Watch for tryout dates in late fall.", "tag": "open", "when": "Winter season", "where": "—", "who": "Coach Hidle", "id": "boys-basketball"}, {"cat": "Sport", "cost": "—", "full": "Spring sport", "lastHeard": "2026-09-23", "name": "Boys Soccer", "note": "See Coach Lee about interest meetings.", "tag": "open", "when": "Spring season", "where": "—", "who": "Coach Lee", "id": "boys-soccer"}, {"cat": "Club", "cost": "—", "full": "Leadership & service program", "lastHeard": "2026-09-11", "name": "Chick-fil-A Leadership Academy", "note": "Apply on the Northside Communications Canvas page.", "tag": "open", "when": "By application", "where": "Room 311", "who": "Ms. Mason", "id": "cfa-leadership-academy"}, {"cat": "Sport", "cost": "—", "full": "Competition & sideline", "lastHeard": "2026-08-21", "name": "Cheerleading", "note": "Competition season runs alongside football; squads cheer pep rallies and games.", "tag": "open", "when": "In season", "where": "—", "who": "Coach Macphail (sideline)", "id": "cheerleading"}, {"cat": "Club", "cost": "—", "flag": "Meeting times come from an older school page — confirm with a sponsor.", "full": "Casual & tournament chess", "lastHeard": "2026-09-23", "name": "Chess Club", "note": "Plays local tournaments and the state tournament each March. Founded by Northside students in 2011.", "tag": "open", "when": "Tue afternoons & Wed mornings", "where": "Room 929", "who": "Mrs. Ball & Mrs. Rahim", "id": "chess-club"}, {"cat": "Arts", "cost": "—", "full": "Choral music", "lastHeard": "2026-09-23", "name": "Chorus", "note": "See Ms. Green about joining.", "tag": "open", "when": "Class & concerts", "where": "—", "who": "Ms. Green", "id": "chorus"}, {"cat": "Club", "cost": "—", "full": "Current events discussion", "lastHeard": "2026-08-25", "name": "Club America", "note": "For conversation about current events in an open, civil environment.", "tag": "pm", "when": "After school", "where": "Room 102", "who": "—", "id": "club-america"}, {"cat": "Club", "cost": "—", "full": "Writing, poetry & D&D", "lastHeard": "2026-08-27", "name": "Creative Writing Club", "note": "All writing levels and styles welcome, explicitly including students who want to run D&D campaigns.", "tag": "pm", "when": "After school, 4:05 PM", "where": "Room 108", "who": "Ms. Fisher", "id": "creative-writing"}, {"cat": "Sport", "cost": "—", "full": "Running team", "lastHeard": "2026-09-23", "name": "Cross Country", "note": "See Coach Dean, or Ms. Fisher in room 108, to join. The JV boys took first at their Sep 19 meet, and a Northside runner placed 14th of 156 at the Release the Hounds Invitational.", "tag": "open", "when": "See sponsor", "where": "Room 108", "who": "Coach Dean", "id": "cross-country"}, {"cat": "Club", "cost": "—", "full": "Marketing & business competition", "lastHeard": "2026-09-23", "name": "DECA", "note": "Next meeting Wednesday, Oct 14 at 8:10 AM in room 917 (earlier meetings were after school). Members competing at DECA state in January should start their manuals now — links and resources on the Northside DECA Canvas page. Questions to Mr. Hart or Ms. Gentry.", "tag": "am", "when": "Next meeting Oct 14, 8:10 AM", "where": "Room 917", "who": "Ms. Gentry & Mr. Hart", "id": "deca"}, {"cat": "Club", "cost": "Dues by Sep 25", "full": "Future Business Leaders of America", "lastHeard": "2026-09-23", "name": "FBLA", "note": "Pay dues in room 514 or online through My Payments Plus. Business and computer-science competition events.", "tag": "pm", "when": "Next meeting Oct 7", "where": "Room 514", "who": "Ms. Killingsworth", "id": "fbla"}, {"cat": "Club", "cost": "$35 dues", "full": "Family, Career & Community Leaders of America", "lastHeard": "2026-09-23", "name": "FCCLA", "note": "Join before the end of September. Service-focused — members average about 20 hours a year, which counts toward NHS and college applications.", "tag": "pm", "when": "Directly after school", "where": "Room 202", "who": "Ms. Lindblad", "id": "fccla"}, {"cat": "Sport", "cost": "Physical required", "full": "Girls flag football", "lastHeard": "2026-09-23", "name": "Flag Football", "note": "First game of the season is Monday, Sep 28 vs. Smith Station, kickoff 6:45 PM, tickets on GoFan. Tryouts were Sep 8 for 9th–10th and Sep 9 for 11th–12th; paperwork and an updated physical were due Sep 3.", "tag": "pm", "when": "First game Sep 28, 6:45 PM", "where": "Baseball field", "who": "Coach Ingram & Ms. Gilreath", "id": "flag-football"}, {"cat": "Sport", "cost": "Tickets on GoFan", "full": "Varsity football", "lastHeard": "2026-09-23", "name": "Football", "note": "Home game Thursday, Sep 24 at 7:00 PM vs. Woodward Academy, tickets $10 on GoFan. Homecoming game is Thursday, Oct 1 at 7:00 PM, with the court presented at halftime.", "tag": "open", "when": "In season", "where": "Kinnett Stadium", "who": "Coach Oropeza", "id": "football"}, {"cat": "Sport", "cost": "—", "full": "Winter sport", "lastHeard": "2026-09-23", "name": "Girls Basketball", "note": "Watch for tryout dates in late fall.", "tag": "open", "when": "Winter season", "where": "—", "who": "Coach Johnson", "id": "girls-basketball"}, {"cat": "Sport", "cost": "—", "full": "Interest meeting Sep 28", "lastHeard": "2026-09-23", "name": "Girls Soccer", "note": "Spring sport. Interest meeting Monday, Sep 28 at 4:05 PM in room 504 — about 30 minutes, covering fall workouts and required paperwork. If you can't attend, pick up the forms in room 504.", "tag": "pm", "when": "Interest meeting Sep 28, 4:05 PM", "where": "Room 504", "who": "Coach Branch", "id": "girls-soccer"}, {"cat": "Sport", "cost": "—", "full": "Boys & girls golf", "lastHeard": "2026-09-23", "name": "Golf", "note": "See Mr. Jeffcoat about joining.", "tag": "open", "when": "Spring season", "where": "—", "who": "Mr. Jeffcoat", "id": "golf"}, {"cat": "Club", "cost": "$20 dues + $25 shirt", "full": "Health Occupations Students of America", "lastHeard": "2026-09-22", "name": "HOSA", "note": "Apply via the HOSA Google form. Meetings so far: Aug 18 and Sep 23, both before school.", "tag": "am", "when": "Before school, 8:10 AM", "where": "Room 506", "who": "Ms. McNelly & Coach Branch", "id": "hosa"}, {"cat": "Club", "cost": "—", "full": "Army Junior ROTC", "lastHeard": "2026-09-23", "name": "JROTC", "note": "Leadership, citizenship, drill and first aid. The rifle team trains here too.", "tag": "open", "when": "Class & after school", "where": "JROTC classrooms", "who": "JROTC instructors", "id": "jrotc"}, {"cat": "Arts", "cost": "—", "full": "Band & color guard", "lastHeard": "2026-08-17", "name": "Marching Band", "note": "Practices 6–8 hours a week in the fall, mostly in the student parking lot after school. Plays every home football game, some away games, competitions and parades. Percussion and color guard audition in the spring.", "tag": "pm", "when": "Most afternoons, fall", "where": "Student parking lot", "who": "Mr. Thompson", "id": "marching-band"}, {"cat": "Academic team", "cost": "—", "flag": "Sponsor not fully confirmed — check before you go.", "full": "Competition math", "lastHeard": "2026-08-27", "name": "Math Team", "note": "Counts as a qualifying competition for the academic letter.", "tag": "pm", "when": "After school", "where": "Room 935", "who": "Mr. Folta", "id": "math-team"}, {"cat": "Academic team", "cost": "—", "full": "Model United Nations", "lastHeard": "2026-08-18", "name": "Model UN", "note": "New this year. Pitched to students who like debate, research, and politics.", "tag": "pm", "when": "After school, 4:00 PM", "where": "Room 607", "who": "Student founders", "id": "model-un"}, {"cat": "Honor society", "cost": "$20 dues", "full": "Mathematics honor society", "lastHeard": "2026-08-20", "name": "Mu Alpha Theta", "note": "Requires Advanced Algebra or higher and a 3.0 or better in all previous math classes. Dues cover membership and, for seniors, graduation regalia.", "tag": "pm", "when": "After school, 4:05 PM", "where": "Room 914", "who": "—", "id": "mu-alpha-theta"}, {"cat": "Club", "cost": "—", "full": "Cultures & community", "lastHeard": "2026-09-17", "name": "Multicultural Club", "note": "Meets roughly monthly on Thursdays. Members describe it as a place to learn about new cultures and each other.", "tag": "pm", "when": "After school, 4:00 PM", "where": "Room 103", "who": "Ms. Rahim", "id": "multicultural-club"}, {"cat": "Honor society", "cost": "—", "full": "NHS", "lastHeard": "2026-09-18", "name": "National Honor Society", "note": "Meetings are for already-inducted members. The fall interest meeting was Sep 1 in the art room (510) with Ms. Black.", "tag": "am", "when": "Before school, 8:15 AM", "where": "Senior cafeteria", "who": "Ms. Mobley", "id": "nhs"}, {"cat": "Club", "cost": "—", "full": "Student organization", "lastHeard": "2026-08-07", "name": "Northside Sisterhood", "note": "Meeting time and sponsor not posted yet.", "tag": "open", "when": "To be posted", "where": "—", "who": "—", "id": "northside-sisterhood"}, {"cat": "Arts", "cost": "—", "full": "String orchestra", "lastHeard": "2026-09-23", "name": "Orchestra", "note": "See Ms. Hostetter about joining.", "tag": "open", "when": "Class & concerts", "where": "—", "who": "Ms. Hostetter", "id": "orchestra"}, {"cat": "Academic team", "cost": "—", "full": "Literature competition team", "lastHeard": "2026-09-23", "name": "Reading Bowl", "note": "Interest meeting Wednesday, Oct 7 at 8:15 AM in room 108. Members represent Northside as \"Supreme Readers\"; also counts as a qualifying competition for the academic letter. See Ms. Fisher if you cannot attend.", "tag": "am", "when": "Interest meeting Oct 7, 8:15 AM", "where": "Room 108", "who": "Ms. Fisher", "id": "reading-bowl"}, {"cat": "Sport", "cost": "Valid physical required", "full": "Varsity rifle team", "lastHeard": "2026-08-13", "name": "Rifle", "note": "You do not have to be enrolled in JROTC to try out. Training happens in the JROTC classrooms.", "tag": "pm", "when": "Tryouts ran Aug 24 – Sep 3", "where": "JROTC classroom A", "who": "—", "id": "rifle"}, {"cat": "Academic team", "cost": "—", "flag": "First listed as room 514; room 608 is confirmed.", "full": "FIRST Tech Challenge", "lastHeard": "2026-09-23", "name": "Robotics (FTC)", "note": "Meets every Wednesday immediately after school in room 608 with Mr. Hull — room 608 confirmed again on Sep 23. Open to anyone interested in engineering, building, coding or robotics.", "tag": "pm", "when": "Wednesdays, right after school", "where": "Room 608", "who": "Mr. Hull", "id": "robotics-ftc"}, {"cat": "Honor society", "cost": "—", "full": "Science National Honor Society", "lastHeard": "2026-09-10", "name": "Science NHS", "note": "Juniors and seniors with a 3.0 overall, 3.5 in science, enrolled in an AP/honors/dual-enrollment science class with a B or better. Strong sophomores considered. Applications closed Sep 2.", "tag": "am", "when": "Before school, 8:10 AM", "where": "Room 407", "who": "Ms. Odom & Ms. Cohen", "id": "science-nhs"}, {"cat": "Club", "cost": "—", "full": "Class of 2027", "lastHeard": "2026-09-22", "name": "Senior Class Council", "note": "Monthly meetings. Plans the senior picnic, class day, luncheon, senior skit, class shirts, senior parent night, and graduation duties. Applications ran Aug 14 – Sep 4; join the group Meet.", "tag": "am", "when": "Before school, 8:00 AM sharp", "where": "Ms. Hoffman's room", "who": "Ms. Hoffman", "id": "senior-class-council"}, {"cat": "Club", "cost": "—", "full": "Career & technical leadership", "lastHeard": "2026-08-17", "name": "SkillsUSA", "note": "Covers engineering, drafting, fire science, robotics, and debate events.", "tag": "pm", "when": "After school", "where": "Room 200", "who": "Mr. Cox, Mr. Jeffcoat & Mr. Hull", "id": "skillsusa"}, {"cat": "Sport", "cost": "$7 on GoFan", "full": "Lady Pats softball", "lastHeard": "2026-09-23", "name": "Softball", "note": "JV typically throws first pitch around 5:45 PM with varsity following at 7:00 PM. Varsity won 13–8 at home on Monday, Sep 21.", "tag": "open", "when": "In season", "where": "The Rock", "who": "—", "id": "softball"}, {"cat": "Club", "cost": "—", "full": "Culture, food & celebrations", "lastHeard": "2026-09-23", "name": "Spanish Club", "note": "Hispanic Heritage Month, Día de los Muertos, salsa lessons, crafts and monthly themed activities. Open to everyone.", "tag": "open", "when": "See sponsor", "where": "—", "who": "Señora Colmenares", "id": "spanish-club"}, {"cat": "Academic team", "cost": "—", "full": "Competition speech and debate", "lastHeard": "2026-09-23", "name": "Speech & Debate", "note": "First interest meeting Wednesday, Sep 30 at 4:00 PM in room 108, for returning members and new students. See Ms. Fisher if you cannot attend.", "tag": "pm", "when": "Interest meeting Sep 30, 4:00 PM", "where": "Room 108", "who": "Ms. Fisher", "id": "speech-debate"}, {"cat": "Sport", "cost": "—", "flag": "Also listed with a Coach Trawick — confirm who runs meetings.", "full": "Swim team", "lastHeard": "2026-08-17", "name": "Swim", "note": "Interest meeting was Aug 17 at 8:15 AM in room 936. See Coach Odom if you missed it.", "tag": "am", "when": "Season meetings before school", "where": "Room 936", "who": "Coach Odom", "id": "swim"}, {"cat": "Sport", "cost": "—", "full": "Boys & girls tennis", "lastHeard": "2026-09-23", "name": "Tennis", "note": "Spring sport.", "tag": "open", "when": "Spring season", "where": "—", "who": "—", "id": "tennis"}, {"cat": "Arts", "cost": "—", "full": "Literary magazine", "lastHeard": "2026-08-18", "name": "The Lantern", "note": "This year's theme is Throughout the Years — infancy, childhood, adolescence, adulthood. Accepts creative writing, art, and photography; theme is encouraged, not required.", "tag": "open", "when": "Submissions open", "where": "Room 109", "who": "Ms. Hoffman", "id": "the-lantern"}, {"cat": "Arts", "cost": "—", "full": "Drama department", "lastHeard": "2026-09-02", "name": "Theater & Thespians", "note": "Sign-up board is outside room 512. Fall one-act is Peter and the Starcatcher for GHSA competition; tech crew interviews run alongside auditions. The program puts on four shows a year.", "tag": "pm", "when": "After school, 4:05 PM", "where": "Room 512", "who": "Mr. Phillips", "id": "theater"}, {"cat": "Sport", "cost": "—", "full": "Sprints, distance, jumps & throws", "lastHeard": "2026-09-23", "name": "Track & Field", "note": "Spring sport, open to all grades.", "tag": "open", "when": "Spring season", "where": "—", "who": "Coach Shepherd", "id": "track-field"}, {"cat": "Club", "cost": "—", "full": "Technology Student Association", "lastHeard": "2026-08-12", "name": "TSA", "note": "Over 75 technology competition events. Open to every student, not just engineering pathway kids.", "tag": "pm", "when": "After school", "where": "Room 608", "who": "Student officers", "id": "tsa"}, {"cat": "Sport", "cost": "Tickets on GoFan", "full": "JV & varsity", "lastHeard": "2026-09-23", "name": "Volleyball", "note": "Senior night is Wednesday, Sep 23 at 5:15 PM vs. Brookstone — the theme is Hawaiian.", "tag": "open", "when": "In season", "where": "Home & away", "who": "Coach Roper", "id": "volleyball"}, {"cat": "Sport", "cost": "—", "full": "Preseason workouts", "lastHeard": "2026-08-25", "name": "Wrestling", "note": "Workouts started Aug 24 and run every Monday and Wednesday. Meet in the atrium right after school.", "tag": "pm", "when": "Mon & Wed, 4:15–5:15 PM", "where": "Meet in the atrium", "who": "Coach Redmond (head coach), Coach Smith (rm 100) & Coach DJ", "id": "wrestling"}, {"cat": "Arts", "cost": "—", "full": "Student yearbook staff", "lastHeard": "2026-08-07", "name": "Yearbook", "note": "Collecting student photos — summer travel, Northside summer programs, first-day pictures. Ask Mrs. Clay how to submit.", "tag": "open", "when": "Submissions open", "where": "—", "who": "Mrs. Clay", "id": "yearbook"}], "events": [{"date": "2026-08-11", "kind": "tryout", "note": "GHSA competition show. No experience needed; sign-up board outside room 512.", "time": "16:30", "title": "One-act auditions — Peter and the Starcatcher", "where": "Auditorium", "who": "Mr. Phillips", "id": "2026-08-11-one-act-auditions"}, {"date": "2026-08-12", "kind": "meeting", "note": "Started promptly at 8:15.", "time": "08:15", "title": "Flag football interest meeting", "where": "Senior cafeteria", "who": "", "id": "2026-08-12-flag-football-interest"}, {"date": "2026-08-12", "kind": "meeting", "note": "", "time": "16:15", "title": "Rifle team interest meeting", "where": "JROTC classroom A", "who": "", "id": "2026-08-12-rifle-interest"}, {"date": "2026-08-12", "kind": "meeting", "note": "Engineering, drafting, fire science, robotics, debate.", "time": "", "title": "SkillsUSA first interest meeting", "where": "Room 200", "who": "Mr. Cox & Mr. Jeffcoat", "id": "2026-08-12-skillsusa"}, {"date": "2026-08-12", "kind": "meeting", "note": "Open to all students, not just the engineering pathway.", "time": "", "title": "TSA interest meeting", "where": "Room 608", "who": "", "id": "2026-08-12-tsa"}, {"date": "2026-08-13", "kind": "tryout", "note": "Sign-up board is outside room 512.", "time": "", "title": "One-act tech crew interviews", "where": "Room 512", "who": "Mr. Phillips", "id": "2026-08-13-one-act-tech"}, {"date": "2026-08-15", "kind": "event", "note": "$7, cash only, all proceeds to the team.", "time": "11:00", "title": "Cross country car wash", "where": "Northside parking lot", "who": "", "id": "2026-08-15-xc-car-wash"}, {"date": "2026-08-17", "kind": "event", "note": "3 to 10 PM. Drop your receipt in the bucket at the host stand.", "time": "15:00", "title": "Swim team dine-to-donate", "where": "Texas Roadhouse", "who": "", "id": "2026-08-17-swim-fundraiser"}, {"date": "2026-08-17", "kind": "meeting", "note": "New and returning swimmers.", "time": "08:15", "title": "Swim team interest meeting", "where": "Room 936", "who": "Coach Odom", "id": "2026-08-17-swim-interest"}, {"date": "2026-08-18", "kind": "meeting", "note": "Leadership elections and upcoming events. Dues $20, shirt $25.", "time": "08:15", "title": "HOSA first meeting", "where": "Room 506", "who": "Ms. McNelly", "id": "2026-08-18-hosa-first"}, {"date": "2026-08-19", "kind": "meeting", "note": "Directly after school.", "time": "", "title": "DECA first meeting", "where": "Room 917", "who": "Ms. Gentry & Mr. Hart", "id": "2026-08-19-deca-first"}, {"date": "2026-08-19", "kind": "meeting", "note": "After school.", "time": "", "title": "FBLA interest meeting", "where": "Room 514", "who": "Ms. Killingsworth", "id": "2026-08-19-fbla-interest"}, {"date": "2026-08-19", "kind": "meeting", "note": "New club this year.", "time": "16:00", "title": "Model UN interest meeting", "where": "Room 607", "who": "", "id": "2026-08-19-model-un"}, {"date": "2026-08-20", "kind": "meeting", "note": "Advanced Algebra or higher and a 3.0 in previous math. Dues $20.", "time": "16:05", "title": "Mu Alpha Theta interest meeting", "where": "Room 914", "who": "", "id": "2026-08-20-mu-alpha-theta"}, {"date": "2026-08-21", "kind": "game", "note": "Season opener. Pats won 29–6.", "time": "20:00", "title": "Football at Smith Station — blackout game", "where": "TC Britain Field", "who": "", "id": "2026-08-21-football-smith-station"}, {"date": "2026-08-24", "kind": "tryout", "note": "Ran through Sep 3. Valid physical required; JROTC enrollment is not.", "time": "", "title": "Rifle team tryouts begin", "where": "JROTC classroom A", "who": "", "id": "2026-08-24-rifle-tryouts"}, {"date": "2026-08-24", "kind": "tryout", "note": "Every Monday and Wednesday, 4:15 to 5:15.", "time": "16:15", "title": "Wrestling preseason workouts begin", "where": "Meet in the atrium", "who": "Coach Smith & Coach DJ", "id": "2026-08-24-wrestling-start"}, {"date": "2026-08-25", "kind": "meeting", "note": "All writing levels, and D&D campaigns, welcome.", "time": "16:05", "title": "Creative Writing Club interest meeting", "where": "Room 108", "who": "Ms. Fisher", "id": "2026-08-25-creative-writing-interest"}, {"date": "2026-08-25", "kind": "meeting", "note": "Directly after school.", "time": "", "title": "FCCLA first meeting", "where": "Room 202", "who": "Ms. Lindblad", "id": "2026-08-25-fccla-first"}, {"date": "2026-08-25", "kind": "school", "note": "Walk the class schedule and meet teachers. The international travel meeting followed at 7:30 in room 514.", "time": "18:00", "title": "Open house", "where": "", "who": "", "id": "2026-08-25-open-house"}, {"date": "2026-08-26", "kind": "school", "note": "No yearbook photo means no yearbook appearance.", "time": "", "title": "Picture day — 9th through 11th grade", "where": "", "who": "", "id": "2026-08-26-picture-day"}, {"date": "2026-08-26", "flag": "First listed as room 514, corrected to 608.", "kind": "meeting", "note": "4:00 to 4:30 PM.", "time": "16:00", "title": "Robotics FTC interest meeting", "where": "Room 608", "who": "", "id": "2026-08-26-robotics-ftc"}, {"date": "2026-08-27", "kind": "meeting", "note": "Directly after school.", "time": "", "title": "Math Team interest meeting", "where": "Room 935", "who": "", "id": "2026-08-27-math-team"}, {"date": "2026-08-27", "kind": "meeting", "note": "", "time": "16:00", "title": "Multicultural Club first meeting", "where": "Room 103", "who": "Ms. Rahim", "id": "2026-08-27-multicultural-first"}, {"date": "2026-08-29", "flag": "Also listed as Aug 26 in one place.", "kind": "meeting", "note": "Current events discussion.", "time": "", "title": "Club America first meeting", "where": "Room 102", "who": "", "id": "2026-08-29-club-america"}, {"date": "2026-08-31", "kind": "meeting", "note": "", "time": "16:00", "title": "Creative Writing Club meeting", "where": "Room 108", "who": "Ms. Fisher", "id": "2026-08-31-creative-writing"}, {"date": "2026-09-01", "kind": "meeting", "note": "For students and parents together.", "time": "18:00", "title": "Baseball interest meeting", "where": "Cafeteria", "who": "Coach Powell", "id": "2026-09-01-baseball-interest"}, {"date": "2026-09-01", "kind": "meeting", "note": "Directly after school.", "time": "", "title": "NHS interest meeting", "where": "Room 510, art room", "who": "Ms. Black", "id": "2026-09-01-nhs-interest"}, {"date": "2026-09-02", "kind": "meeting", "note": "All welcome; bring dues.", "time": "", "title": "FBLA meeting", "where": "Room 514", "who": "", "id": "2026-09-02-fbla"}, {"date": "2026-09-02", "kind": "meeting", "note": "Department info, new officers, upcoming Thespian business.", "time": "16:05", "title": "Thespian meeting", "where": "Room 512", "who": "Mr. Phillips", "id": "2026-09-02-thespians"}, {"date": "2026-09-03", "kind": "deadline", "note": "", "time": "", "title": "Flag football paperwork & physical due", "where": "Coach Ingram's office or Ms. Gilreath's classroom", "who": "", "id": "2026-09-03-flag-football-paperwork"}, {"date": "2026-09-08", "kind": "meeting", "note": "No art experience required.", "time": "", "title": "Art Club first meeting", "where": "Room 510", "who": "Ms. Black", "id": "2026-09-08-art-club"}, {"date": "2026-09-08", "kind": "tryout", "note": "", "time": "16:30", "title": "Flag football tryouts — 9th & 10th grade", "where": "Baseball field", "who": "Coach Ingram & Ms. Gilreath", "id": "2026-09-08-flag-football-lower"}, {"date": "2026-09-09", "kind": "tryout", "note": "", "time": "16:30", "title": "Flag football tryouts — 11th & 12th grade", "where": "Baseball field", "who": "Coach Ingram & Ms. Gilreath", "id": "2026-09-09-flag-football-upper"}, {"date": "2026-09-10", "kind": "meeting", "note": "", "time": "08:10", "title": "Science NHS first meeting", "where": "Room 407", "who": "Ms. Odom & Ms. Cohen", "id": "2026-09-10-science-nhs"}, {"date": "2026-09-11", "kind": "deadline", "note": "", "time": "", "title": "Best Buddies application deadline", "where": "Northside Communications Canvas page", "who": "Ms. Mason", "id": "2026-09-11-best-buddies-deadline"}, {"date": "2026-09-11", "kind": "game", "note": "First home game of the season. Pats won 33–30 on a touchdown with 7 seconds left.", "time": "19:00", "title": "Football home vs. Lovejoy — neon game", "where": "Kinnett Stadium", "who": "", "id": "2026-09-11-football-lovejoy"}, {"date": "2026-09-15", "kind": "game", "note": "", "time": "18:30", "title": "Varsity volleyball at Newnan", "where": "Away", "who": "", "id": "2026-09-15-volleyball-newnan"}, {"date": "2026-09-17", "kind": "meeting", "note": "", "time": "16:00", "title": "Multicultural Club meeting", "where": "Room 103", "who": "Ms. Rahim", "id": "2026-09-17-multicultural"}, {"date": "2026-09-17", "kind": "game", "note": "JV first pitch 5:45, varsity 7:00. $7 on GoFan.", "time": "17:45", "title": "Softball home game", "where": "The Rock", "who": "", "id": "2026-09-17-softball-home"}, {"date": "2026-09-18", "kind": "game", "note": "", "time": "", "title": "Football at Langston Hughes", "where": "Away, Atlanta", "who": "", "id": "2026-09-18-football-langston"}, {"date": "2026-09-18", "kind": "game", "note": "Playing both Harris County and Columbus High.", "time": "18:00", "title": "JV volleyball at Harris County", "where": "Away", "who": "", "id": "2026-09-18-jv-volleyball"}, {"date": "2026-09-18", "kind": "meeting", "note": "For already-inducted members.", "time": "08:15", "title": "NHS second meeting", "where": "Senior cafeteria", "who": "Ms. Mobley", "id": "2026-09-18-nhs"}, {"date": "2026-09-21", "kind": "school", "note": "Retakes require $5 in cash — no cash, no retake.", "time": "", "title": "Absentee & makeup picture day", "where": "Auditorium", "who": "Faculty and 9th–11th grade", "id": "2026-09-21-picture-makeup"}, {"date": "2026-09-21", "kind": "game", "note": "Northside varsity won 13–8.", "time": "", "title": "Softball home vs. Newnan", "where": "The Rock", "who": "", "id": "2026-09-21-softball-newnan"}, {"date": "2026-09-23", "kind": "deadline", "note": "No exceptions and no extensions.", "time": "16:00", "title": "Homecoming date approval forms due", "where": "Front office", "who": "", "id": "2026-09-23-hoco-date-forms"}, {"date": "2026-09-23", "kind": "meeting", "note": "Competition information for the year.", "time": "08:10", "title": "HOSA meeting", "where": "Room 506", "who": "Ms. McNelly & Coach Branch", "id": "2026-09-23-hosa"}, {"date": "2026-09-23", "kind": "deadline", "note": "Juniors with a 3.0 or higher, for National Merit qualification.", "time": "", "title": "PSAT registration deadline", "where": "Canvas form", "who": "", "id": "2026-09-23-psat-registration"}, {"date": "2026-09-23", "kind": "meeting", "note": "8:00 sharp. Join the group Meet first.", "time": "08:00", "title": "Senior Class Council — first meeting", "where": "Ms. Hoffman's room", "who": "Ms. Hoffman", "id": "2026-09-23-senior-council"}, {"date": "2026-09-23", "kind": "game", "note": "Hawaiian theme; gifts for the seniors welcome.", "time": "17:15", "title": "Volleyball senior night vs. Brookstone", "where": "Home", "who": "", "id": "2026-09-23-volleyball-senior-night"}, {"date": "2026-09-24", "kind": "game", "note": "Tickets $10 on GoFan.", "time": "19:00", "title": "Football home vs. Woodward Academy", "where": "Kinnett Stadium", "who": "", "id": "2026-09-24-football-woodward"}, {"date": "2026-09-24", "kind": "school", "note": "Log into both Canvas and Teams for every class and attend the scheduled meetings, or it counts as an unexcused absence.", "time": "", "title": "Virtual learning day — district-wide", "where": "", "who": "", "id": "2026-09-24-virtual-day"}, {"date": "2026-09-25", "kind": "deadline", "note": "", "time": "", "title": "FBLA dues deadline", "where": "Room 514 or My Payments Plus", "who": "Ms. Killingsworth", "id": "2026-09-25-fbla-dues"}, {"date": "2026-09-25", "kind": "school", "note": "", "time": "", "title": "Student holiday — no school", "where": "", "who": "", "id": "2026-09-25-student-holiday"}, {"date": "2026-09-28", "kind": "game", "note": "First game of the season. Tickets on GoFan.", "time": "18:45", "title": "Flag football vs. Smith Station", "where": "", "who": "", "id": "2026-09-28-flag-football-smith-station"}, {"date": "2026-09-28", "kind": "meeting", "note": "About 30 minutes, covering fall workouts and required paperwork. Forms available in room 504 if you can't attend.", "time": "16:05", "title": "Girls soccer interest meeting", "where": "Room 504", "who": "Coach Branch", "id": "2026-09-28-girls-soccer"}, {"date": "2026-09-28", "kind": "event", "note": "$15.", "time": "", "title": "Homecoming dance tickets go on sale", "where": "GoFan", "who": "", "id": "2026-09-28-hoco-tickets"}, {"date": "2026-09-28", "kind": "event", "note": "Runs Sep 28 through Oct 2.", "time": "", "title": "Homecoming week begins", "where": "", "who": "", "id": "2026-09-28-hoco-week"}, {"date": "2026-09-30", "kind": "deadline", "note": "$35. Due before the end of September.", "time": "", "title": "FCCLA sign-up and dues deadline", "where": "Room 202", "who": "Ms. Lindblad", "id": "2026-09-30-fccla-dues"}, {"date": "2026-09-30", "kind": "meeting", "note": "First interest meeting, for returning and new students. See Ms. Fisher if you cannot attend.", "time": "16:00", "title": "Speech & debate interest meeting", "where": "Room 108", "who": "Ms. Fisher", "id": "2026-09-30-speech-debate"}, {"date": "2026-10-01", "kind": "game", "note": "Court presented at halftime, king and queen crowned.", "time": "19:00", "title": "Homecoming football game", "where": "Kinnett Stadium", "who": "", "id": "2026-10-01-hoco-game"}, {"date": "2026-10-02", "kind": "deadline", "note": "Space is limited.", "time": "", "title": "Financial aid night registration deadline", "where": "Counseling (sign-up required)", "who": "Ms. Dean", "id": "2026-10-02-finaid-registration"}, {"date": "2026-10-02", "kind": "event", "note": "8 to 10 PM.", "time": "20:00", "title": "Homecoming dance", "where": "Northside courtyard", "who": "", "id": "2026-10-02-hoco-dance"}, {"date": "2026-10-02", "kind": "deadline", "note": "Entrepreneurship competition; a Northside student won districtwide last year.", "time": "", "title": "Shine Competition application deadline", "where": "Startup Columbus website", "who": "Ms. Clay or any CTAE teacher", "id": "2026-10-02-shine-deadline"}, {"date": "2026-10-05", "kind": "event", "note": "FAFSA, HOPE and Zell Miller questions. Open to students and families.", "time": "18:00", "title": "Financial aid Q&A night", "where": "", "who": "Counseling department", "id": "2026-10-05-finaid-night"}, {"date": "2026-10-07", "kind": "meeting", "note": "", "time": "", "title": "FBLA meeting", "where": "Room 514", "who": "Ms. Killingsworth", "id": "2026-10-07-fbla-meeting"}, {"date": "2026-10-07", "kind": "meeting", "note": "See Ms. Fisher if you cannot attend.", "time": "08:15", "title": "Reading bowl interest meeting", "where": "Room 108", "who": "Ms. Fisher", "id": "2026-10-07-reading-bowl"}, {"date": "2026-10-08", "kind": "deadline", "note": "Engineering scholarship for seniors.", "time": "", "title": "AES Scholarship deadline", "where": "aesengineers.com/scholarships", "who": "Counseling", "id": "2026-10-08-aes-scholarship"}, {"date": "2026-10-14", "kind": "meeting", "note": "Before school. State-competition manuals should be underway.", "time": "08:10", "title": "DECA meeting", "where": "Room 917", "who": "Mr. Hart & Ms. Gentry", "id": "2026-10-14-deca"}, {"date": "2026-10-20", "kind": "deadline", "note": "Questions go to the counseling office.", "time": "", "title": "PSAT $20 fee due", "where": "Counseling", "who": "Ms. Rolison, counseling", "id": "2026-10-20-psat-fee"}, {"date": "2026-10-21", "kind": "school", "note": "Tenth-grade PSAT scores do not count toward National Merit.", "time": "", "title": "PSAT at Northside", "where": "", "who": "", "id": "2026-10-21-psat"}, {"date": "2026-12-01", "kind": "deadline", "note": "For students from military families.", "time": "", "title": "Military Child of the Year award deadline", "where": "Operation Homefront", "who": "Counseling", "id": "2026-12-01-military-child-award"}]}</script>
 
+<div class="band" aria-hidden="true"></div>
 <div class="wrap">
   <header class="masthead">
     <p class="kicker">Northside High School &middot; Columbus, GA</p>
-    <h1>Northside Patriot Bulletin</h1>
-    <p class="standfirst">Every club, team, meeting and deadline announced on Patriot News Network &mdash; pulled from the daily video so you don't have to watch it.</p>
-    <p class="sourceline" id="sourceline">Loading&hellip;</p>
+    <h1>Patriot Bulletin</h1>
+    <p class="standfirst">Clubs, teams, meetings and deadlines at Northside &mdash; all in one place.</p>
+    <div class="stats" id="stats"></div>
   </header>
 
   <div class="tabs" role="tablist">
-    <button id="tab-cal" role="tab" aria-selected="true" aria-controls="view-cal">Calendar</button>
-    <button id="tab-dir" role="tab" aria-selected="false" aria-controls="view-dir">Clubs &amp; teams</button>
+    <button id="tab-cal" role="tab" aria-selected="true" aria-controls="view-cal" data-view="cal">Calendar</button>
+    <button id="tab-dir" role="tab" aria-selected="false" aria-controls="view-dir" data-view="dir">Clubs &amp; teams</button>
+    <button id="tab-info" role="tab" aria-selected="false" aria-controls="view-info" data-view="info">School info</button>
   </div>
 
   <section id="view-cal" role="tabpanel" aria-labelledby="tab-cal">
     <div class="standing">
-      <h2>Repeats every week</h2>
+      <p class="label">Every week</p>
       <ul>
         <li><b>FCA</b> <span>Tuesdays, 8:15 AM &middot; senior cafeteria</span></li>
         <li><b>Wrestling workouts</b> <span>Mon &amp; Wed, 4:15&ndash;5:15 PM &middot; atrium</span></li>
@@ -287,41 +318,75 @@ footer a{color:var(--accent-ink)}
       <div class="pillrow" id="calfilters" role="group" aria-label="Filter events"></div>
       <span class="count" id="calcount"></span>
     </div>
-    <div class="cal" id="cal"></div>
+    <div class="cal" id="cal"><p class="state">Loading&hellip;</p></div>
   </section>
 
   <section id="view-dir" role="tabpanel" aria-labelledby="tab-dir" hidden>
     <div class="controls">
-      <input id="qd" type="search" placeholder="Search a club, room, or sponsor…" aria-label="Search clubs and teams">
+      <input id="qd" type="search" placeholder="Search a club, team, room or sponsor…" aria-label="Search clubs and teams">
       <div class="pillrow" id="dirfilters" role="group" aria-label="Filter by category"></div>
       <span class="count" id="dircount"></span>
     </div>
-    <div class="grid" id="grid"></div>
+    <div class="grid" id="grid"><p class="state">Loading&hellip;</p></div>
+  </section>
+
+  <section id="view-info" role="tabpanel" aria-labelledby="tab-info" hidden>
+    <div class="info">
+      <div class="panel">
+        <h2>Counselors</h2>
+        <ul class="rows">
+          <li><span class="k">Last names A&ndash;Go</span><span class="v">Ms. Dean (lead)</span></li>
+          <li><span class="k">Last names Gr&ndash;O</span><span class="v">Ms. Randolph</span></li>
+          <li><span class="k">Last names P&ndash;Z</span><span class="v">Ms. Rolison</span></li>
+          <li><span class="k">Dual enrollment</span><span class="v">Ms. Redondo</span></li>
+          <li><span class="k">Registrar &amp; records</span><span class="v">Ms. Kopp</span></li>
+        </ul>
+        <p class="small">Counseling office: Mon&ndash;Fri, 8:05 AM&ndash;4:00 PM.</p>
+      </div>
+      <div class="panel">
+        <h2>Main office</h2>
+        <ul class="rows">
+          <li><span class="k">Address</span><span class="v">2002 American Way<br>Columbus, GA 31909</span></li>
+          <li><span class="k">Phone</span><span class="v"><a href="tel:+17067482920">706-748-2920</a></span></li>
+          <li><span class="k">Principal</span><span class="v">Mr. Laney</span></li>
+          <li><span class="k">College board code</span><span class="v mono">110-838</span></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>Quick links</h2>
+        <ul class="links">
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe8wssgUtw_MhsmBH-Td3yQFk1BthP6BKiJONfbj9F8PA2b0Q/viewform?usp=sf_link" target="_blank" rel="noopener">Attendance excuse form</a></li>
+          <li><a href="https://campus.muscogee.k12.ga.us" target="_blank" rel="noopener">Infinite Campus (grades)</a></li>
+          <li><a href="https://apps.muscogee.k12.ga.us/SchoolMenu/0203/Calendar" target="_blank" rel="noopener">Cafeteria menu</a></li>
+          <li><a href="https://sites.muscogee.k12.ga.us/northside/counselingdepartment/" target="_blank" rel="noopener">Counseling &amp; scholarships</a></li>
+          <li><a href="https://sites.muscogee.k12.ga.us/northside/transcripts/" target="_blank" rel="noopener">Transcript requests</a></li>
+          <li><a href="https://www.northsidede.com/" target="_blank" rel="noopener">Dual enrollment</a></li>
+          <li><a href="https://sites.muscogee.k12.ga.us/northside/wp-content/uploads/sites/36/2023/10/GaTutor-Information.pdf" target="_blank" rel="noopener">Free online tutoring (GA Tutor)</a></li>
+          <li><a href="https://www.mypaymentsplus.com/welcome" target="_blank" rel="noopener">Pay dues &amp; class packages</a></li>
+          <li><a href="https://northsidep3.square.site/" target="_blank" rel="noopener">P3 school store</a></li>
+          <li><a href="https://northsidepatriots.org/" target="_blank" rel="noopener">Patriots athletics</a></li>
+          <li><a href="https://sites.muscogee.k12.ga.us/northside/" target="_blank" rel="noopener">Official school website</a></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <h2>How to read this</h2>
-    <p><b>Calendar</b> lists one-off things with a date &mdash; meetings, tryouts, games, deadlines, days off. It opens on today and runs forward; switch to <em>Past</em> to look back. The three weekly standing meetings sit in the box at the top instead, since they'd otherwise fill the calendar with repeats.</p>
-    <p><b>Clubs &amp; teams</b> is the standing picture of each group: where it meets, who sponsors it, what it costs. <b>Heard</b> is the last date it came up on air.</p>
-    <p>Treat rooms, times and spellings as good-but-not-certain, and anything that looked contradictory is flagged rather than quietly resolved. This is a student-made summary, not an official school publication; check with the sponsor before you count on a time.</p>
+    <p>A student-made guide, not an official school publication. Rooms and times can change &mdash; check with the sponsor or coach before you count on one. Items marked in red italics are still being confirmed.</p>
   </footer>
 </div>
 
 <script>
-const RAW = (() => {
-  try { return JSON.parse(document.getElementById("patriot-data").textContent); }
-  catch (e) { return {updated: "", clubs: [], events: []}; }
-})();
-
 const CATS = ["All", "Club", "Sport", "Honor society", "Academic team", "Arts"];
+const CATLABEL = {"All":"All", "Club":"Clubs", "Sport":"Sports", "Honor society":"Honor societies", "Academic team":"Academic teams", "Arts":"Arts"};
 const TAGLABEL = {am:"Before school", pm:"After school", open:"Varies"};
 const MODES = ["Upcoming", "Past", "Meetings", "Sports", "Deadlines"];
 const KINDLABEL = {meeting:"Meeting", deadline:"Deadline", game:"Game", tryout:"Tryout", school:"School", event:"Event"};
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const VIEWS = ["cal", "dir", "info"];
 
-const clubs = RAW.clubs || [];
-const events = RAW.events || [];
+let clubs = [], events = [], updated = "";
 let view = "cal", calMode = "Upcoming", calQuery = "", dirCat = "All", dirQuery = "";
 
 function readPref(k, allowed, fb){
@@ -329,7 +394,7 @@ function readPref(k, allowed, fb){
   return fb;
 }
 function writePref(k, v){ try { localStorage.setItem(k, v); } catch (e) {} }
-view = readPref("npb-view", ["cal", "dir"], "cal");
+view = readPref("npb-view", VIEWS, "cal");
 calMode = readPref("npb-calmode", MODES, "Upcoming");
 dirCat = readPref("npb-cat", CATS, "All");
 
@@ -339,8 +404,8 @@ function esc(s){
     {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]
   ));
 }
-function todayISO(){
-  const d = new Date();
+function todayISO(offset){
+  const d = new Date(); if (offset) d.setDate(d.getDate() + offset);
   return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
 }
 function isDate(s){ return typeof s === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s); }
@@ -365,18 +430,34 @@ function daysAgo(iso){
   const t = Date.parse(iso + "T12:00:00Z");
   return isNaN(t) ? Infinity : (Date.now() - t) / 86400000;
 }
+function known(v){ return v && v !== "—"; }
 
+/* ---------- tabs ---------- */
 function setView(v){
   view = v; writePref("npb-view", v);
-  $("tab-cal").setAttribute("aria-selected", String(v === "cal"));
-  $("tab-dir").setAttribute("aria-selected", String(v === "dir"));
-  $("view-cal").hidden = v !== "cal";
-  $("view-dir").hidden = v !== "dir";
+  VIEWS.forEach(x => {
+    $("tab-" + x).setAttribute("aria-selected", String(x === v));
+    $("view-" + x).hidden = x !== v;
+  });
 }
-$("tab-cal").addEventListener("click", () => setView("cal"));
-$("tab-dir").addEventListener("click", () => setView("dir"));
+VIEWS.forEach(x => $("tab-" + x).addEventListener("click", () => setView(x)));
 setView(view);
 
+/* ---------- header stats ---------- */
+function renderStats(){
+  const t0 = todayISO(), t7 = todayISO(7);
+  const week = events.filter(e => isDate(e.date) && e.date >= t0 && e.date <= t7).length;
+  const ahead = events.filter(e => isDate(e.date) && e.date >= t0).length;
+  const parts = [
+    ["<b>" + week + "</b>", "in the next 7 days"],
+    ["<b>" + ahead + "</b>", "coming up"],
+    ["<b>" + clubs.length + "</b>", "clubs &amp; teams"]
+  ];
+  if (isDate(updated)) parts.push(["Updated", "<b>" + fmtShort(updated) + "</b>"]);
+  $("stats").innerHTML = parts.map(p => '<span class="stat">' + p[0] + " " + p[1] + "</span>").join("");
+}
+
+/* ---------- calendar ---------- */
 function renderCalFilters(){
   const el = $("calfilters"); el.innerHTML = "";
   MODES.forEach(k => {
@@ -389,8 +470,8 @@ function renderCalFilters(){
 }
 function calMatches(e){
   const today = todayISO();
-  if (calMode === "Upcoming" && e.date < today) return false;
   if (calMode === "Past" && e.date >= today) return false;
+  if (calMode !== "Past" && e.date < today) return false;
   if (calMode === "Meetings" && e.kind !== "meeting") return false;
   if (calMode === "Deadlines" && e.kind !== "deadline") return false;
   if (calMode === "Sports" && e.kind !== "game" && e.kind !== "tryout") return false;
@@ -405,7 +486,7 @@ function renderCal(){
     return String(a.time || "").localeCompare(String(b.time || ""));
   });
   $("calcount").textContent = rows.length + (rows.length === 1 ? " entry" : " entries");
-  if (!events.length){ $("cal").innerHTML = '<p class="state">No dated events yet.</p>'; return; }
+  if (!events.length){ $("cal").innerHTML = '<p class="state">Nothing on the calendar yet.</p>'; return; }
   if (!rows.length){ $("cal").innerHTML = '<p class="state">Nothing here. Try another filter, or clear the search.</p>'; return; }
 
   const byDay = [];
@@ -422,27 +503,27 @@ function renderCal(){
       (isToday ? '<span class="todaytag">Today</span>' : "") + '</div>' +
       '<div class="events">' + g.items.map(e => {
         const kind = KINDLABEL[e.kind] ? e.kind : "event";
-        const meta = [e.where, e.who].filter(x => x && x !== "—").join(" · ");
-        const tail = e.note || e.flag;
+        const meta = [e.where, e.who].filter(known).join(" · ");
         return '<div class="ev' + (past ? " past" : "") + '">' +
           '<span class="evtime">' + fmtTime(e.time) + '</span>' +
           '<span class="evtitle">' + esc(e.title) + '</span>' +
           '<span class="kind ' + kind + '">' + KINDLABEL[kind] + '</span>' +
-          (meta || tail
+          (meta || e.note || e.flag
             ? '<span class="evmeta">' + esc(meta) +
               (e.note ? (meta ? " — " : "") + "<em>" + esc(e.note) + "</em>" : "") +
-              (e.flag ? ' <em class="flag">' + esc(e.flag) + "</em>" : "") + '</span>'
+              (e.flag ? '<span class="flag">' + esc(e.flag) + "</span>" : "") + '</span>'
             : "") + '</div>';
       }).join("") + '</div></section>';
   }).join("");
 }
 $("q").addEventListener("input", e => { calQuery = e.target.value.trim().toLowerCase(); renderCal(); });
 
+/* ---------- directory ---------- */
 function renderDirFilters(){
   const el = $("dirfilters"); el.innerHTML = "";
   CATS.forEach(c => {
     const b = document.createElement("button");
-    b.type = "button"; b.textContent = c;
+    b.type = "button"; b.textContent = CATLABEL[c];
     b.setAttribute("aria-pressed", String(c === dirCat));
     b.addEventListener("click", () => { dirCat = c; writePref("npb-cat", c); renderDirFilters(); renderDir(); });
     el.appendChild(b);
@@ -468,27 +549,45 @@ function renderDir(){
     return '<article class="card' + fresh + '">' +
       '<div class="card-top"><span class="cat">' + esc(d.cat || "Club") + '</span>' +
       '<span class="chip ' + tag + '">' + TAGLABEL[tag] + '</span></div>' +
-      '<h3>' + esc(d.name) + '<span class="full">' + esc(d.full) + '</span></h3>' +
+      '<h3>' + esc(d.name) + (known(d.full) ? '<span class="full">' + esc(d.full) + '</span>' : "") + '</h3>' +
       '<dl><dt>When</dt><dd>' + esc(d.when || "—") + '</dd>' +
       '<dt>Where</dt><dd>' + esc(d.where || "—") + '</dd>' +
       '<dt>Who</dt><dd class="muted">' + esc(d.who || "—") + '</dd>' +
       '<dt>Cost</dt><dd class="muted">' + esc(d.cost || "—") + '</dd>' +
-      '<dt>Heard</dt><dd class="muted">' + fmtShort(d.lastHeard) + '</dd></dl>' +
+      '<dt>Updated</dt><dd class="muted">' + fmtShort(d.lastHeard) + '</dd></dl>' +
       (d.note || d.flag
-        ? '<p class="note">' + esc(d.note || "") + (d.flag ? ' <span class="flag">' + esc(d.flag) + '</span>' : "") + '</p>'
+        ? '<p class="note">' + esc(d.note || "") + (d.flag ? '<span class="flag">' + esc(d.flag) + '</span>' : "") + '</p>'
         : "") + '</article>';
   }).join("");
 }
 $("qd").addEventListener("input", e => { dirQuery = e.target.value.trim().toLowerCase(); renderDir(); });
 
-(function init(){
-  const today = todayISO();
-  const next = events.filter(e => isDate(e.date) && e.date >= today).length;
-  const last = events.map(e => e.date).filter(isDate).sort().slice(-1)[0];
-  $("sourceline").textContent =
-    next + " upcoming · " + clubs.length + " groups · through " + fmtShort(last) +
-    (RAW.updated ? " · updated " + fmtShort(RAW.updated) : "");
-  renderCalFilters(); renderDirFilters(); renderCal(); renderDir();
+function renderAll(){ renderStats(); renderCal(); renderDir(); }
+renderCalFilters(); renderDirFilters();
+
+/* ---------- data ---------- */
+(async function load(){
+  let raw = {updated: "", clubs: [], events: []};
+  try { raw = JSON.parse($("patriot-data").textContent); } catch (e) {}
+  if ((raw.clubs || []).length || (raw.events || []).length || typeof claude === "undefined"){
+    clubs = raw.clubs || []; events = raw.events || []; updated = raw.updated || "";
+    renderAll(); return;
+  }
+  let db = null;
+  try { db = await claude.use("db"); } catch (e) { db = null; }
+  if (!db){ renderAll(); return; }
+  const stamp = () => {
+    const ds = clubs.map(c => c.lastHeard).filter(isDate).sort();
+    updated = ds.length ? ds[ds.length - 1] : "";
+  };
+  db.collection("events").limit(1000).onSnapshot(
+    snap => { events = snap.docs.map(d => Object.assign({id: d.id}, d.data())); renderAll(); },
+    err => { $("cal").innerHTML = '<p class="state">Couldn\'t load the calendar right now.</p>'; }
+  );
+  db.collection("clubs").limit(300).onSnapshot(
+    snap => { clubs = snap.docs.map(d => Object.assign({id: d.id}, d.data())); stamp(); renderAll(); },
+    err => { $("grid").innerHTML = '<p class="state">Couldn\'t load the directory right now.</p>'; }
+  );
 })();
 </script>
 
